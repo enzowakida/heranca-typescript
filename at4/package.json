@@ -1,5 +1,5 @@
 {
-  "name": "emprego",
+  "name": "at4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@types/node": "^26.5.0",
+    "@types/node": "^22.20.3",
     "@types/readline-sync": "^1.4.8",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
