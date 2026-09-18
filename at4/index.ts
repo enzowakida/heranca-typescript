@@ -1,37 +1,48 @@
 import readLine from "readline-sync";
-import { Funcionario } from "./src/models/Funcionario.js";
+import { Livro } from "./src/models/Livro.js";
+import { Revista } from "./src/models/Revista.js"
 
-console.log("=== CADASTRO DE FUNCIONÁRIO ===");
-const novoFuncionario = new Funcionario(
-    "111.222.333-44",
-    "Carlos Silva",
-    "11999999999",
-    "carlos@email.com",
-    "1990-05-15",
-    "REG-1234",
-    "CTPS-9876",
-    "PIS-5555"
+console.log("=== CADASTRO DE LIVRO E REVISTA ===");
+const novoLivro = new Livro(
+    "Hábitos Atômicos",
+    2019,
+    "James Clear",
+    314
 );
 
-console.log(`\nFuncionário cadastrado: ${novoFuncionario.getNome}`);
-console.log(`Registro: ${novoFuncionario.getRegistro}`);
+const novoRevista = new Revista(
+    "Turma da Mônica",
+    2006,
+    67
+)
+
+console.log(`Título: ${novoLivro.getTitulo}`);
+console.log(`Autor: ${novoLivro.getAutor}`);
+
+console.log(`Título: ${novoRevista.getTitulo}`)
+console.log(`Autor: ${novoRevista.getEdicao}`)
 
 // Interação via teclado utilizando herança
-novoFuncionario.setNome = readLine.question("\nDigite o nome atualizado do funcionario: ");
-novoFuncionario.setTelefone = readLine.question("Digite o novo telefone: ");
+novoLivro.setTitulo = readLine.question("\nDigite o titulo atualizado do livro: ");
+novoLivro.setAnoPublicado = readLine.questionInt("Digite o novo ano em que foi publicado: ");
+novoLivro.setAutor = readLine.question("Digite o nome do autor do novo livro: ");
+novoLivro.setNumeroPaginas = readLine.questionInt("Digite o numero de paginas que o novo livro possui: ");
 
-// Exibindo TODOS os dados do funcionário no final
+novoRevista.setTitulo = readLine.question("Digite o titulo atualizado da revista: ");
+novoRevista.setAnoPublicado = readLine.questionInt("Digite o ano em que foi publicado a nova revista: ");
+novoRevista.setEdicao = readLine.questionInt("Digite a edicao da nova revista: ");
+
+// Exibindo TODOS os dados do livro e da revista no final
 console.log("\n================================================");
-console.log("      DADOS COMPLETOS DO FUNCIONÁRIO            ");
-console.log("================================================");
-// Dados herdados da classe PessoaFisica
-console.log(`CPF:                  ${novoFuncionario.getCpf}`);
-console.log(`Nome:                 ${novoFuncionario.getNome}`);
-console.log(`Telefone:             ${novoFuncionario.getTelefone}`);
-console.log(`E-mail:               ${novoFuncionario.getEmail}`);
-console.log(`Data de Nascimento:   ${novoFuncionario.getDataNascimento}`);
-// Dados específicos da classe Funcionario
-console.log(`Registro:             ${novoFuncionario.getRegistro}`);
-console.log(`Carteira de Trabalho: ${novoFuncionario.getCarteiraTrabalho}`);
-console.log(`PIS:                  ${novoFuncionario.getPis}`);
+console.log("      DADOS COMPLETOS DO LIVRO E DA REVISTA            ");
+console.log("==================================================");
+// Dados herdados da classe Livro
+console.log(`Titulo do Livro:                   ${novoLivro.getTitulo}`);
+console.log(`Publicado no ano de:               ${novoLivro.getAnoPublicado}`);
+console.log(`Autor:                             ${novoLivro.getAutor}`);
+console.log(`Numero de paginas:                 ${novoLivro.getNumeroPaginas}`);
+// Dados específicos da classe Revista
+console.log(`Titulo da Revista:                 ${novoRevista.getTitulo}`);
+console.log(`Publicada no ano de:               ${novoRevista.getAnoPublicado}`);
+console.log(`Edicao:                            ${novoRevista.getEdicao}`);
 console.log("================================================\n");
