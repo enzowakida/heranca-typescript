@@ -29,17 +29,17 @@ novoCorrente.setAgencia = readLine.questionInt("Digite a nova agencia: ");
 novoPoupanca.setTitular = readLine.question("\nDigite o novo titular: ");
 novoPoupanca.setAgencia = readLine.questionInt("Digite a nova agencia: ");
 
-// Exibindo TODOS os dados do funcionário no final
+// Exibindo TODOS os dados das contas no final
 console.log("\n================================================");
 console.log("      DADOS COMPLETOS DAS CONTAS            ");
 console.log("================================================");
-// Dados herdados da classe PessoaFisica
+// Dados herdados da classe Corrente
 console.log(`Titular:                       ${novoCorrente.getTitular}`);
 console.log(`Agencia:                       ${novoCorrente.getAgencia}`);
 console.log(`Saldo:                         ${novoCorrente.getSaldo}`);
 console.log(`Limite do Cheque Especial:     ${novoCorrente.getLimiteChequeEspecial}`);
-console.log("================================================\n");
-// Dados específicos da classe Funcionario
+console.log("================================================");
+// Dados específicos da classe Poupanca
 console.log(`Titular:                       ${novoPoupanca.getTitular}`);
 console.log(`Agencia:                       ${novoPoupanca.getAgencia}`);
 console.log(`Saldo:                         ${novoPoupanca.getSaldo}`);

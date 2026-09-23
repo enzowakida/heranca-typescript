@@ -26,15 +26,16 @@ novoAutomovel.setCor = readLine.question("Digite a cor do automovel: ");
 novoAutomovel.setNumeroPortas = readLine.questionInt("Digite o numero de portas do automovel: ");
 novoAutomovel.setMotor = readLine.question("Digite o motor do automovel: ");
 
-// Exibindo TODOS os dados do funcionário no final
+// Exibindo TODOS os dados dos veiculos no final
 console.log("\n================================================");
-console.log("      DADOS COMPLETOS DO FUNCIONÁRIO            ");
+console.log("      DADOS COMPLETOS DOS VEICULOS            ");
 console.log("================================================");
 // Dados herdados da classe Veiculo
 console.log(`Marca:                  ${novoAutomovel.getMarca}`);
 console.log(`Modelo:                 ${novoAutomovel.getModelo}`);
 console.log(`Ano:                    ${novoAutomovel.getAno}`);
 console.log(`Cor:                    ${novoAutomovel.getCor}`);
+console.log("================================================");
 // Dados específicos da classe Automovel
 console.log(`Numero de Portas:       ${novoAutomovel.getNumeroPortas}`);
 console.log(`Motor:                  ${novoAutomovel.getMotor}`);

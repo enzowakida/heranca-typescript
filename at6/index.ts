@@ -30,7 +30,7 @@ novoTelevisao.setFabricante = readLine.question("Digite o novo fabricante: ");
 novoSmartphone.setCodigoBarras = readLine.questionInt("\nDigite o novo codigo de barras: ");
 novoSmartphone.setFabricante = readLine.question("Digite o novo fabricante: ");
 
-// Exibindo TODOS os dados do funcionário no final
+// Exibindo TODOS os dados dos produtos no final
 console.log("\n================================================");
 console.log("      DADOS COMPLETOS DOS PRODUTOS            ");
 console.log("================================================");
@@ -39,7 +39,7 @@ console.log(`Codigo de barras:                    ${novoTelevisao.getCodigoBarra
 console.log(`Fabricante:                          ${novoTelevisao.getFabricante}`);
 console.log(`Preco:                               ${novoTelevisao.getPreco}`);
 console.log(`Tamanho da tela (polegadas):         ${novoTelevisao.getTamanhoTelaPolegadas}`);
-console.log("================================================\n");
+console.log("================================================");
 // Dados específicos da classe Smartphone
 console.log(`Codigo de barras:                    ${novoSmartphone.getCodigoBarras}`);
 console.log(`Fabricante:                          ${novoSmartphone.getFabricante}`);

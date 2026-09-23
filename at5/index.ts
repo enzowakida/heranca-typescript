@@ -34,15 +34,15 @@ novoGerente.setMatricula = readLine.questionInt("Digite a nova matricula: ");
 console.log("\n================================================");
 console.log("      DADOS COMPLETOS DOS FUNCIONÁRIOS            ");
 console.log("==================================================");
-// Dados herdados da classe Funcionario
+// Dados herdados da classe Programador
 console.log(`Nome:                              ${novoProgramador.getNome}`);
 console.log(`Matricula:                         ${novoProgramador.getMatricula}`);
 console.log(`Salario:                           ${novoProgramador.getSalario}`);
 console.log(`Linguagem Principal:               ${novoProgramador.getLingPrincipal}`);
-console.log("================================================\n");
+console.log("================================================");
 // Dados específicos da classe Gerente
 console.log(`Nome:                              ${novoGerente.getNome}`);
-console.log(`Matricula                          ${novoGerente.getMatricula}`);
+console.log(`Matricula:                         ${novoGerente.getMatricula}`);
 console.log(`Salario:                           ${novoGerente.getSalario}`);
 console.log(`Bonus Anual:                       ${novoGerente.getBonusAnual}`);
 console.log("================================================\n");

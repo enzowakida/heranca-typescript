@@ -41,6 +41,7 @@ console.log(`Titulo do Livro:                   ${novoLivro.getTitulo}`);
 console.log(`Publicado no ano de:               ${novoLivro.getAnoPublicado}`);
 console.log(`Autor:                             ${novoLivro.getAutor}`);
 console.log(`Numero de paginas:                 ${novoLivro.getNumeroPaginas}`);
+console.log("================================================");
 // Dados específicos da classe Revista
 console.log(`Titulo da Revista:                 ${novoRevista.getTitulo}`);
 console.log(`Publicada no ano de:               ${novoRevista.getAnoPublicado}`);
